@@ -1,0 +1,65 @@
+/* Layout corrections where the MDB Bootstrap grid meets custom destination cards. */
+.destination-grid.row { margin-right: 0; margin-left: 0; }
+.destination-grid.row > .destination-card { padding: 22px; }
+@media (max-width: 760px) { .destination-grid.row > .destination-card { width: 100%; } }
+
+/* Material/MDB navigation redesign */
+.top-app-bar {
+  height: 92px;
+  padding: 14px clamp(18px, 5vw, 76px);
+  background: linear-gradient(180deg, rgba(3, 29, 31, .65), rgba(3, 29, 31, 0));
+}
+.nav-shell {
+  width: 100%;
+  max-width: 1380px;
+  height: 64px;
+  margin: auto;
+  padding: 0 10px 0 17px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 18px;
+  background: rgba(9, 43, 44, .54);
+  box-shadow: 0 10px 28px rgba(0, 20, 20, .18);
+  backdrop-filter: blur(15px);
+}
+.top-app-bar .navbar-brand { margin: 0 35px 0 0; }
+.top-app-bar .brand-mark { width: 33px; height: 33px; border-radius: 11px; }
+.desktop-nav { gap: 5px; margin: 0; }
+.desktop-nav .nav-link {
+  position: relative;
+  padding: 10px 13px !important;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, .8) !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+.desktop-nav .nav-link:hover { color: #fff !important; background: rgba(255, 255, 255, .1); }
+.desktop-nav .nav-link.active { color: #d9ff7a !important; }
+.desktop-nav .nav-link.active:after { content: ''; position: absolute; right: 13px; bottom: 4px; left: 13px; height: 2px; border-radius: 9px; background: #d9ff7a; }
+.app-actions { margin-left: auto; }
+.app-actions .icon-button { width: 38px; height: 38px; background: transparent; }
+.top-app-bar .button-primary { min-height: 40px; padding: 0 16px; border-radius: 11px; background: #d9ff7a; box-shadow: none; }
+.top-app-bar .button-primary .material-symbols-rounded { font-size: 17px; }
+@media (max-width: 760px) {
+  .top-app-bar { height: 78px; padding: 8px 14px; }
+  .nav-shell { height: 58px; padding-left: 12px; border-radius: 15px; }
+  .top-app-bar .navbar-brand { margin-right: 0; }
+  .top-app-bar .brand-mark { width: 30px; height: 30px; }
+}
+
+/* MDB landing-page navbar treatment */
+.top-app-bar.navbar { height: 76px; padding: 0; background: transparent !important; }
+.top-app-bar .container { max-width: 1140px; }
+.top-app-bar .navbar-brand { margin-right: 35px; color: #fff; }
+.top-app-bar .brand-mark { background: transparent; border: 1px solid rgba(255,255,255,.8); color: #fff; border-radius: 50%; }
+.top-app-bar .navbar-nav { gap: 6px; }
+.top-app-bar .nav-link { padding: .75rem .85rem !important; color: rgba(255,255,255,.86) !important; font-size: 13px; font-weight: 700; }
+.top-app-bar .nav-item.active .nav-link, .top-app-bar .nav-link:hover { color: #fff !important; }
+.top-app-bar .nav-search { display: grid; place-items: center; width: 38px; height: 38px; margin-right: 12px; border-radius: 50%; color: #fff; text-decoration: none; }
+.top-app-bar .nav-search:hover { background: rgba(255,255,255,.13); color: #fff; }
+.top-app-bar .nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid rgba(255,255,255,.75); border-radius: 4px; color: #fff; font-size: 12px; font-weight: 700; text-decoration: none; }
+.top-app-bar .nav-cta:hover { background: #fff; color: #155e63; }
+.top-app-bar .nav-cta .material-symbols-rounded { font-size: 16px; }
+.top-app-bar.top-nav-collapse { background: #155e63 !important; box-shadow: 0 3px 9px rgba(0,0,0,.2); }
+@media (max-width: 991px) { .top-app-bar.navbar { height: auto; padding: 10px 0; background: #155e63 !important; } .top-app-bar .navbar-collapse { padding: 10px 0 2px; } .top-app-bar .navbar-nav { gap: 0; } .top-app-bar .nav-link { padding: .65rem 0 !important; } .top-app-bar .form-inline { display: flex; padding: 9px 0; } }

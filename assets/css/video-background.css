@@ -1,0 +1,53 @@
+/* Local Goa drone video: crop to the hero on every screen size. */
+.hero-media { position: absolute; z-index: -2; inset: 0; overflow: hidden; background: #123b3e; pointer-events: none; }
+.hero-media video { position: static; z-index: auto; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.service-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 520px;
+  overflow: hidden;
+  color: #fff;
+  padding: 150px clamp(20px, 7vw, 110px) 52px;
+  display: flex;
+  align-items: center;
+}
+.service-hero .hero-layout {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.service-hero .hero-content {
+  max-width: 760px;
+}
+.service-hero h1 {
+  margin: 16px 0 14px;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.07em;
+}
+.service-hero .status-chip {
+  margin-bottom: 0;
+}
+.service-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .74), rgba(0, 0, 0, .52) 48%, rgba(0, 0, 0, .16));
+}
+.service-hero .hero-content p {
+  max-width: 620px;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 767px) {
+  .service-hero {
+    min-height: 420px;
+    padding-top: 120px;
+  }
+  .service-hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+  }
+}

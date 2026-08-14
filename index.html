@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#155e63">
+  <title>Home | Premium Taxi Service in Goa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/mdb-pro.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/mdb-overrides.css">
+  <link rel="stylesheet" href="assets/css/video-background.css">
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+  <header>
+    <nav class="top-app-bar navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="top">
+      <div class="container">
+        <a class="brand navbar-brand" href="#top"><img class="brand-logo" src="img/premium-taxi-logo.png"
+            alt="Premium Taxi logo"><span>Premium <b>Taxi</b></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#premiumTaxiNavbar"
+          aria-controls="premiumTaxiNavbar" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="premiumTaxiNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fleet">Fleet</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="form-inline">
+                <a class="nav-cta waves-effect waves-light"
+              href="tel:+917588483221"><span class="material-symbols-rounded">phone_in_talk</span> +91 7588483221</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true"><video autoplay muted loop playsinline preload="metadata">
+          <source
+            src="assets/video/GOA%20%20DRONE%20VIEW%20%205K%20HIGH%20QUALITY%20%20BY%20%20DILEEP%20DIABLO%20%20-%20Dileep%20Diablo%20Photography%20%281080p%2C%20h264%29.mp4"
+            type="video/mp4">
+        </video></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="status-chip"><span></span> Goa, India</div>
+          <h1>Explore Goa in<br><em>Ultimate Comfort.</em></h1>
+          <p>Experience the finest cab service in Goa. From airport transfers to full-day tours, we provide safe,
+            reliable, and premium transportation.</p><a
+            class="btn btn-danger btn-rounded waves-effect waves-light hero-booking-btn" href="#ride-form">Book Your
+            Ride <span class="material-symbols-rounded">arrow_forward</span></a>
+        </div>
+        <form class="ride-form card z-depth-2" id="ride-form" novalidate>
+          <div class="card-body">
+            <h2>Book Your Ride</h2>
+            <p>Fill details to get instant confirmation via WhatsApp</p>
+            <div class="form-group mdb-field"><span class="material-symbols-rounded field-icon">my_location</span><input
+                class="form-control" id="pickup" type="text" placeholder="Pick up location" required minlength="3">
+            </div>
+            <div class="form-group mdb-field"><span class="material-symbols-rounded field-icon">location_on</span><input
+                class="form-control" id="dropoff" type="text" placeholder="Drop off location" required minlength="3">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 mdb-field"><span
+                  class="material-symbols-rounded field-icon">calendar_month</span><input
+                  class="form-control datepicker" id="ride-date" type="text" placeholder="mm/dd/yyyy"
+                  aria-label="Ride date" autocomplete="off" required></div>
+              <div class="form-group col-md-6 mdb-field"><span
+                  class="material-symbols-rounded field-icon">schedule</span><input class="form-control timepicker"
+                  id="ride-time" type="text" placeholder="--:-- --" aria-label="Ride time" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4 mdb-field"><span
+                  class="material-symbols-rounded field-icon">groups</span><select class="form-control" id="passengers"
+                  required>
+                  <option value="">Passengers</option>
+                  <option>1-4 Pax</option>
+                  <option>5-8 Pax</option>
+                  <option>9+ Pax</option>
+                </select></div>
+              <div class="form-group col-md-8 mdb-field"><span
+                  class="material-symbols-rounded field-icon">phone</span><input class="form-control" id="mobile"
+                  type="tel" placeholder="Mobile Number" required inputmode="numeric" maxlength="13"></div>
+            </div>
+            <button class="btn btn-danger btn-rounded waves-effect waves-light form-submit" type="submit" disabled><span
+                class="material-symbols-rounded">chat</span> Book via WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="packages-section content-section" id="tour-packages">
+      <div class="section-heading">
+        <div class="text-center">
+          <p class="overline">Special Rates</p>
+          <h2>Tour Packages</h2>
+        </div>
+      </div>
+
+      <div class="packages-grid">
+        <article class="package-card">
+          <div class="package-header">
+            <div class="package-icon"><span class="material-symbols-rounded">directions_car</span></div>
+            <div>
+              <h3>8 Hr / 80 Km</h3>
+            </div>
+          </div>
+          <p class="package-description">Perfect for quick city tours.</p>
+          <ul class="package-meta">
+            <li><span>Extra km</span><strong>₹35</strong></li>
+            <li><span>Extra hour</span><strong>₹200</strong></li>
+            <li><span>Driver night charge (7pm-12am)</span><strong>₹500</strong></li>
+          </ul>
+          <div class="package-actions">
+            <a class="button button-primary" href="tel:+917588483221"><span class="material-symbols-rounded">call</span>
+              Call</a>
+            <a class="button button-light" href="https://wa.me/917588483221" target="_blank" rel="noreferrer"><span
+                class="material-symbols-rounded">shopping_bag</span> Book Now</a>
+          </div>
+        </article>
+
+        <article class="package-card featured">
+          <div class="package-header">
+            <div class="package-icon"><span class="material-symbols-rounded">travel_explore</span></div>
+            <div>
+              <h3>10 Hr / 100 Km</h3>
+            </div>
+          </div>
+          <p class="package-description">Ideal for half-day trips.</p>
+          <ul class="package-meta">
+            <li><span>Extra km</span><strong>₹35</strong></li>
+            <li><span>Extra hour</span><strong>₹200</strong></li>
+            <li><span>Driver night charge (7pm-12am)</span><strong>₹500</strong></li>
+          </ul>
+          <div class="package-actions">
+            <a class="button button-primary" href="tel:+917588483221"><span class="material-symbols-rounded">call</span>
+              Call</a>
+            <a class="button button-light" href="https://wa.me/917588483221" target="_blank" rel="noreferrer"><span
+                class="material-symbols-rounded">shopping_bag</span> Book Now</a>
+          </div>
+        </article>
+
+        <article class="package-card">
+          <div class="package-header">
+            <div class="package-icon"><span class="material-symbols-rounded">map</span></div>
+            <div>
+              <h3>12 Hr / 120 Km</h3>
+            </div>
+          </div>
+          <p class="package-description">Comprehensive full-day exploration.</p>
+          <ul class="package-meta">
+            <li><span>Extra km</span><strong>₹35</strong></li>
+            <li><span>Extra hour</span><strong>₹200</strong></li>
+            <li><span>Driver night charge (7pm-12am)</span><strong>₹500</strong></li>
+          </ul>
+          <div class="package-actions">
+            <a class="button button-primary" href="tel:+917588483221"><span class="material-symbols-rounded">call</span>
+              Call</a>
+            <a class="button button-light" href="https://wa.me/917588483221" target="_blank" rel="noreferrer"><span
+                class="material-symbols-rounded">shopping_bag</span> Book Now</a>
+          </div>
+        </article>
+
+        <article class="package-card outstation">
+          <div class="package-header">
+            <div class="package-icon"><span class="material-symbols-rounded">route</span></div>
+            <div>
+              <h3>Outstation</h3>
+            </div>
+          </div>
+          <p class="package-description">Inter-state travel and multi-day packages.</p>
+          <p class="package-custom">Contact us for custom route pricing.</p>
+          <div class="package-actions">
+            <a class="button button-primary" href="tel:+917588483221"><span class="material-symbols-rounded">call</span>
+              Call</a>
+            <a class="button button-light" href="https://wa.me/917588483221" target="_blank" rel="noreferrer"><span
+                class="material-symbols-rounded">shopping_bag</span> Book Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="services-wrap">
+        <div class="services-header">
+          <p class="overline">What We Offer</p>
+          <h2>Our Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-visual urbania">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Goa Urbania Rental" />
+            </div>
+            <div class="service-body">
+              <h3>Goa Urbania Rental</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Goa Urbania Rental"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Goa Urbania Rental">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual north-goa">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="North Goa Sightseeing" />
+            </div>
+            <div class="service-body">
+              <h3>North Goa Sightseeing</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call North Goa Sightseeing"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp North Goa Sightseeing">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual south-goa">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" alt="South Goa Sightseeing" />
+            </div>
+            <div class="service-body">
+              <h3>South Goa Sightseeing</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call South Goa Sightseeing"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp South Goa Sightseeing">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual city-tour">
+              <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1000&q=80" alt="Goa City Tour (Panjim)" />
+            </div>
+            <div class="service-body">
+              <h3>Goa City Tour (Panjim)</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Goa City Tour (Panjim)"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Goa City Tour (Panjim)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual airport">
+              <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80" alt="Airport Pickup & Drop" />
+            </div>
+            <div class="service-body">
+              <h3>Airport Pickup &amp; Drop</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Airport Pickup & Drop"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Airport Pickup & Drop">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual railway">
+              <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1000&q=80" alt="Railway Station Pickup" />
+            </div>
+            <div class="service-body">
+              <h3>Railway Station Pickup</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Railway Station Pickup"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Railway Station Pickup">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual hotel">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80" alt="Hotel Transfers" />
+            </div>
+            <div class="service-body">
+              <h3>Hotel Transfers</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Hotel Transfers"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Hotel Transfers">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual outstation">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Outstation Trips" />
+            </div>
+            <div class="service-body">
+              <h3>Outstation Trips</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Outstation Trips"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Outstation Trips">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual wedding">
+              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=80" alt="Wedding & Event Transport" />
+            </div>
+            <div class="service-body">
+              <h3>Wedding &amp; Event Transport</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Wedding & Event Transport"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Wedding & Event Transport">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual corporate">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Corporate Travel" />
+            </div>
+            <div class="service-body">
+              <h3>Corporate Travel</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Corporate Travel"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Corporate Travel">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual family">
+              <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1000&q=80" alt="Family & Group Tours" />
+            </div>
+            <div class="service-body">
+              <h3>Family &amp; Group Tours</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Family & Group Tours"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Family & Group Tours">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual custom">
+              <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1000&q=80" alt="Customized Tour Packages" />
+            </div>
+            <div class="service-body">
+              <h3>Customized Tour Packages</h3>
+              <div class="service-actions">
+                <a class="service-action" href="tel:+917588483221" aria-label="Call Customized Tour Packages"><span class="material-symbols-rounded">call</span></a>
+                <a class="service-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Customized Tour Packages">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="travel-time-section">
+      <div class="services-wrap">
+        <div class="services-header">
+          <p class="overline">Travel Info</p>
+          <h2>Distance &amp; Travel Time</h2>
+        </div>
+
+        <div class="travel-tabs">
+          <ul class="nav nav-tabs travel-nav" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="mopa-tab" data-toggle="tab" href="#mopa-airport" role="tab" aria-controls="mopa-airport" aria-selected="true">Distance &amp; Travel Time from Mopa Airport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="dabolim-tab" data-toggle="tab" href="#dabolim-airport" role="tab" aria-controls="dabolim-airport" aria-selected="false">Distance &amp; Travel Time from Dabolim Airport</a>
+            </li>
+          </ul>
+
+          <div class="tab-content travel-content">
+            <div class="tab-pane fade show active" id="mopa-airport" role="tabpanel" aria-labelledby="mopa-tab">
+              <div class="travel-table-wrap">
+                <table class="travel-table table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th>Destination</th>
+                      <th>Approx. Distance</th>
+                      <th>Approx. Travel Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Panaji (Panjim)</td><td>~35 km</td><td>~45 min</td></tr>
+                    <tr><td>Calangute / Baga</td><td>~28 km</td><td>~40 min</td></tr>
+                    <tr><td>Anjuna / Vagator</td><td>~25 km</td><td>~35 min</td></tr>
+                    <tr><td>Morjim / Ashwem</td><td>~20 km</td><td>~30 min</td></tr>
+                    <tr><td>Margao</td><td>~60 km</td><td>~90 min</td></tr>
+                    <tr><td>Colva Beach</td><td>~58 km</td><td>~85 min</td></tr>
+                    <tr><td>Palolem Beach</td><td>~95 km</td><td>~120 min</td></tr>
+                    <tr><td>Mapusa</td><td>~18 km</td><td>~25 min</td></tr>
+                  </tbody>
+                </table>
+                <p class="travel-note text-danger mb-0">Times are approximate and may vary with traffic conditions.</p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="dabolim-airport" role="tabpanel" aria-labelledby="dabolim-tab">
+              <div class="travel-table-wrap">
+                <table class="travel-table table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th>Destination</th>
+                      <th>Approx. Distance</th>
+                      <th>Approx. Travel Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Vasco da Gama (town)</td><td>~4 km</td><td>~8 min</td></tr>
+                    <tr><td>Panaji (Panjim)</td><td>~30 km</td><td>~40 min</td></tr>
+                    <tr><td>Margao</td><td>~25 km</td><td>~35 min</td></tr>
+                    <tr><td>Colva Beach</td><td>~20 km</td><td>~30 min</td></tr>
+                    <tr><td>Calangute Beach</td><td>~35 km</td><td>~50 min</td></tr>
+                    <tr><td>Baga Beach</td><td>~38 km</td><td>~55 min</td></tr>
+                    <tr><td>Palolem Beach</td><td>~65 km</td><td>~80 min</td></tr>
+                    <tr><td>Mapusa</td><td>~42 km</td><td>~55 min</td></tr>
+                  </tbody>
+                </table>
+                <p class="travel-note text-danger mb-0">Times are approximate and may vary with traffic. Highway NH66 is well-maintained.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments-section">
+      <div class="services-wrap">
+        <div class="services-header">
+          <p class="overline">Moments</p>
+          <h2>Gallery</h2>
+        </div>
+
+        <div id="momentsGallery" class="carousel slide gallery-carousel" data-ride="carousel" data-interval="4000">
+          <ol class="carousel-indicators">
+            <li data-target="#momentsGallery" data-slide-to="0" class="active"></li>
+            <li data-target="#momentsGallery" data-slide-to="1"></li>
+            <li data-target="#momentsGallery" data-slide-to="2"></li>
+            <li data-target="#momentsGallery" data-slide-to="3"></li>
+            <li data-target="#momentsGallery" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://exquisite-froyo-1835c9.netlify.app/assets/images/dudhsagar.png" alt="Dudhsagar Waterfall">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Dudhsagar Waterfall</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://exquisite-froyo-1835c9.netlify.app/assets/images/Spice%20plantation%20Farm.jpeg" alt="Spice Plantation">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Spice Plantation</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://exquisite-froyo-1835c9.netlify.app/assets/images/South%20goa%20tour.jpeg" alt="South Goa Tour">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>South Goa Tour</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://exquisite-froyo-1835c9.netlify.app/assets/images/North%20Goa%20Tour.jpeg" alt="North Goa Tour">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>North Goa Tour</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://exquisite-froyo-1835c9.netlify.app/assets/images/calangute_4k.png" alt="Goa Beaches">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Goa Beaches</h5>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#momentsGallery" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#momentsGallery" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+      <div class="services-wrap">
+        <div class="services-header">
+          <p class="overline">Our Vehicles</p>
+          <h2>Our Premium Fleet</h2>
+        </div>
+
+        <div class="fleet-grid">
+          <article class="fleet-card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80" alt="Force Urbania 16+1">
+            <div class="fleet-body">
+              <h3>Force Urbania 16+1</h3>
+              <p>Premium Seating</p>
+            </div>
+          </article>
+
+          <article class="fleet-card">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80" alt="Tempo Traveller">
+            <div class="fleet-body">
+              <h3>Tempo Traveller</h3>
+              <p>Perfect for groups</p>
+            </div>
+          </article>
+
+          <article class="fleet-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Winger">
+            <div class="fleet-body">
+              <h3>Winger</h3>
+              <p>Comfortable journey</p>
+            </div>
+          </article>
+
+          <article class="fleet-card">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80" alt="Mini Bus">
+            <div class="fleet-body">
+              <h3>Mini Bus</h3>
+              <p>Large group transport</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-section" id="destinations">
+      <div class="services-wrap">
+        <div class="services-header">
+          <p class="overline">Sightseeing</p>
+          <h2>Top Destinations</h2>
+        </div>
+
+        <div class="destination-list-grid">
+          <article class="destination-item">
+            <a class="destination-card-link" href="calangute-taxi-service.html" aria-label="Calangute taxi service page">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Calangute">
+            </a>
+            <div class="destination-info">
+              <h3>Calangute</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Calangute taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Calangute taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="candolim-taxi-service.html" aria-label="Candolim taxi service page">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Candolim">
+            </a>
+            <div class="destination-info">
+              <h3>Candolim</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Candolim taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Candolim taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="baga-taxi-service.html" aria-label="Baga taxi service page">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Baga">
+            </a>
+            <div class="destination-info">
+              <h3>Baga</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Baga taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Baga taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="anjuna-taxi-service.html" aria-label="Anjuna taxi service page">
+              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="Anjuna">
+            </a>
+            <div class="destination-info">
+              <h3>Anjuna</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Anjuna taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Anjuna taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="vagator-taxi-service.html" aria-label="Vagator taxi service page">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Vagator">
+            </a>
+            <div class="destination-info">
+              <h3>Vagator</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Vagator taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Vagator taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="morjim-taxi-service.html" aria-label="Morjim taxi service page">
+              <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Morjim">
+            </a>
+            <div class="destination-info">
+              <h3>Morjim</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Morjim taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Morjim taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="ashwem-taxi-service.html" aria-label="Ashwem taxi service page">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Ashwem">
+            </a>
+            <div class="destination-info">
+              <h3>Ashwem</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Ashwem taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Ashwem taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="panaji-taxi-service.html" aria-label="Panaji taxi service page">
+              <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80" alt="Panaji">
+            </a>
+            <div class="destination-info">
+              <h3>Panaji</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Panaji taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Panaji taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="mapusa-taxi-service.html" aria-label="Mapusa taxi service page">
+              <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80" alt="Mapusa">
+            </a>
+            <div class="destination-info">
+              <h3>Mapusa</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Mapusa taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Mapusa taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="margao-taxi-service.html" aria-label="Margao taxi service page">
+              <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=900&q=80" alt="Margao">
+            </a>
+            <div class="destination-info">
+              <h3>Margao</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Margao taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Margao taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="colva-taxi-service.html" aria-label="Colva taxi service page">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Colva">
+            </a>
+            <div class="destination-info">
+              <h3>Colva</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Colva taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Colva taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-item">
+            <a class="destination-card-link" href="palolem-taxi-service.html" aria-label="Palolem taxi service page">
+              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80" alt="Palolem">
+            </a>
+            <div class="destination-info">
+              <h3>Palolem</h3>
+            </div>
+            <div class="destination-actions">
+              <a class="destination-action" href="tel:+917588483221" aria-label="Call Palolem taxi"><span class="material-symbols-rounded">call</span></a>
+              <a class="destination-action" href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Palolem taxi">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-brand-link" href="#top">
+          <img class="brand-logo" src="img/premium-taxi-logo.png" alt="Premium Taxi logo">
+          <span>Premium <b>Taxi</b></span>
+        </a>
+        <p>Premium Taxi & Transportation Services in Goa. Safe, reliable, and comfortable rides for your perfect holiday.</p>
+
+        <div class="footer-contact-list">
+          <a href="tel:+917588483221"><span class="material-symbols-rounded">call</span> +91 7588483221</a>
+          <a href="mailto:booking@premiumtaxi.com"><span class="material-symbols-rounded">mail</span> booking@premiumtaxi.com</a>
+          <span><span class="material-symbols-rounded">location_on</span> Goa, India</span>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://wa.me/917588483221" target="_blank" rel="noreferrer" aria-label="WhatsApp Premium Taxi">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.65 11.65 0 0 0 12.05 0C5.48 0 .11 5.36.11 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.35-1.67a11.94 11.94 0 0 0 5.7 1.72h.01c6.56 0 11.93-5.37 11.93-11.94 0-3.2-1.24-6.2-3.48-8.43zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.77.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.53-5.26c0-5.46 4.45-9.9 9.94-9.9a9.9 9.9 0 0 1 7.04 3.02 9.9 9.9 0 0 1 2.91 7.04c0 5.47-4.45 9.92-9.94 9.92zm5.46-7.41c-.3-.15-1.75-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.75.96-.92 1.16-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.21-.24-.57-.49-.5-.67-.51l-.57-.01c-.2 0-.53.08-.8.38-.27.3-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.05.15.2 2.09 3.18 5.06 4.46.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.75-.71 1.99-1.4.25-.69.25-1.28.18-1.4-.08-.12-.27-.2-.57-.35z"/></svg>
+          </a>
+          <a href="tel:+917588483221" aria-label="Call Premium Taxi"><span class="material-symbols-rounded">phone_in_talk</span></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#fleet">Fleet</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Services & Fleet</h4>
+        <ul>
+          <li>Airport Pickups</li>
+          <li>Sightseeing Tours</li>
+          <li>Outstation Trips</li>
+          <li>Force Urbania (Premium)</li>
+          <li>Tempo Traveller</li>
+          <li>Winger</li>
+          <li>Mini Bus</li>
+        </ul>
+      </div>
+
+      <div class="footer-links footer-map">
+        <h4>Our Location</h4>
+        <a class="map-link" href="https://maps.app.goo.gl/corkucBcDtYxgLQb8" target="_blank" rel="noreferrer">
+          <span>Map Location</span>
+          <span class="material-symbols-rounded">open_in_new</span>
+        </a>
+        <div class="map-preview" aria-hidden="true">
+          <span>Goa</span>
+          <span>India</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Premium Taxi Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/jquery-3.4.1.min.js"></script>
+  <script src="assets/vendor/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap.min.js"></script>
+  <script src="assets/vendor/mdb.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
