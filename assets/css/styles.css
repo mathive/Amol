@@ -1763,6 +1763,10 @@ body {
   .fleet-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.hero-media-ggoter video {
+    transform: unset;
+    height: 100%;
+}
 }
 @media (max-width: 620px) {
   .site-footer {
