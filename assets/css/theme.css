@@ -68,7 +68,7 @@ body { background: #fff; color: #161616; }
 .experience-section { background: #f7f7f7; }
 .about-section { background: #f1f1f1; }
 .body-copy, .planner-field small, footer { color: #666; }
-footer { background: #151515; border-color: #333; }
+footer { background: rgba(0, 0, 0, .85); border-color: #333; }
 footer .brand { color: #fff; }
 @media (max-width: 991px) { .top-app-bar.navbar { background: transparent !important; } .top-app-bar.navbar .navbar-collapse { background: #151515; padding: 12px 16px; border-radius: 0 0 12px 12px; } }
 @media (max-width: 900px) { .hero { min-height: auto; padding: 130px 25px 56px; } .hero-layout { grid-template-columns: 1fr; gap: 38px; } .ride-form.card { justify-self: start; max-width: 560px; } }
