@@ -1,6 +1,8 @@
-/* Local Goa drone video: crop to the hero on every screen size. */
-.hero-media { position: absolute; z-index: -2; inset: 0; overflow: hidden; background: #123b3e; pointer-events: none; }
+/* Local Goa drone video: crop to the hero and footer on every screen size. */
+.hero-media { position: absolute; z-index: -2; inset: 0; overflow: hidden; background: #0d0d0d; pointer-events: none; }
 .hero-media video { position: static; z-index: auto; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.footer-media { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+.footer-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .service-hero {
   position: relative;
   isolation: isolate;
