@@ -175,7 +175,7 @@ document.querySelectorAll('.travel-booking-form').forEach((form) => {
     messageLines.push('Please confirm availability and share fare details.');
 
     const fullMessage = messageLines.join('\n');
-    const waUrl = `https://wa.me/917588483221?text=${encodeURIComponent(fullMessage)}`;
+    const waUrl = `https://wa.me/919730318583?text=${encodeURIComponent(fullMessage)}`;
 
     window.open(waUrl, '_blank', 'noopener,noreferrer');
   });
@@ -199,7 +199,7 @@ if (contactForm) {
     }
 
     const payload = `Hello Mahadeo Cab Services,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
-    window.open(`https://wa.me/917588483221?text=${payload}`, '_blank', 'noopener');
+    window.open(`https://wa.me/919730318583?text=${payload}`, '_blank', 'noopener');
   });
 }
 
@@ -248,3 +248,55 @@ if (contactForm) {
 })();
 
 
+
+
+// =========================================================
+// Sidebar Quick Cab Booking Form Handler
+// Formats user inputs into structured WhatsApp inquiry
+// =========================================================
+document.querySelectorAll('.sidebar-quick-booking-form, .sidebar-sticky form').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const nameInput = form.querySelector('[name="customer_name"], input[type="text"]');
+    const phoneInput = form.querySelector('[name="customer_phone"], input[type="tel"]');
+    const dateInput = form.querySelector('[name="pickup_date"], input[type="date"]');
+    const vehicleSelect = form.querySelector('[name="vehicle_type"], select');
+    const routeInput = form.querySelector('[name="route_service"]');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const date = dateInput ? dateInput.value.trim() : '';
+    const vehicle = vehicleSelect ? vehicleSelect.value.trim() : '';
+    const route = routeInput ? routeInput.value.trim() : (document.querySelector('h1')?.innerText.trim() || document.title.split('|')[0].trim());
+
+    const messageLines = [
+      '🚕 *Mahadeo Cab Service Booking Inquiry*',
+      '━━━━━━━━━━━━━━━━━━━━'
+    ];
+
+    if (name) {
+      messageLines.push(`👤 *Name:* ${name}`);
+    }
+    if (phone) {
+      messageLines.push(`📱 *Phone:* ${phone}`);
+    }
+    if (date) {
+      messageLines.push(`📅 *Pickup Date:* ${date}`);
+    }
+    if (vehicle) {
+      messageLines.push(`🚗 *Vehicle:* ${vehicle}`);
+    }
+    if (route) {
+      messageLines.push(`📍 *Route / Service:* ${route}`);
+    }
+
+    messageLines.push('━━━━━━━━━━━━━━━━━━━━');
+    messageLines.push('Please confirm availability and share fare details.');
+
+    const fullMessage = messageLines.join('\n');
+    const waUrl = `https://wa.me/919730318583?text=${encodeURIComponent(fullMessage)}`;
+
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  });
+});

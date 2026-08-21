@@ -2130,51 +2130,144 @@ footer .brand b,
 
 .fleet-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
   max-width: var(--content-width);
   margin: 0 auto;
 }
 
 .fleet-card {
   background: #fff;
-  border: 1px solid rgba(17, 24, 39, 0.08);
+  border: 1px solid rgba(17, 24, 39, 0.09);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .fleet-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+  border-color: #eb1616;
+}
+
+.fleet-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #f8fafc;
+  height: 210px;
 }
 
 .fleet-card img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   object-fit: cover;
   display: block;
-  background: #eee;
+  transition: transform 0.35s ease;
+}
+
+.fleet-card:hover img {
+  transform: scale(1.04);
+}
+
+.fleet-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(4px);
 }
 
 .fleet-body {
-  padding: 18px 18px 20px;
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .fleet-body h3 {
-  margin: 0 0 8px;
-  font-size: 1.25rem;
-  letter-spacing: -0.04em;
+  margin: 0 0 4px;
+  font-size: 1.22rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--on-surface);
 }
 
+.fleet-body .fleet-capacity {
+  display: inline-block;
+  color: #eb1616;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
 .fleet-body p {
-  margin: 0;
+  margin: 0 0 14px;
   color: var(--on-surface-variant);
-  font-size: 0.96rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.fleet-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.fleet-actions .btn-fleet-whatsapp,
+.fleet-actions .btn-fleet-book {
+  flex-grow: 1;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: #25d366;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s ease;
+}
+
+.fleet-actions .btn-fleet-whatsapp:hover,
+.fleet-actions .btn-fleet-book:hover {
+  background: #1eb956;
+  color: #fff;
+}
+
+.fleet-actions .btn-fleet-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 38px;
+  border-radius: var(--radius-pill);
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.2s ease;
+}
+
+.fleet-actions .btn-fleet-call:hover {
+  background: #c81010;
+  color: #fff;
 }
 
 
@@ -3533,4 +3626,863 @@ footer {
   .service-visual {
     height: 100%;
   }
+}
+
+/* =========================================================
+   INNER PAGES STYLING (Banners, Rate Cards, Layout)
+   ========================================================= */
+
+.inner-page {
+  background-color: #f8fafc;
+}
+
+.inner-page header.scrolling-navbar,
+.inner-page .top-app-bar {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.page-banner-section {
+  position: relative;
+  background: linear-gradient(135deg, #0b1120 0%, #1e293b 60%, #881337 100%);
+  padding: 130px 0 60px;
+  color: #ffffff;
+  border-bottom: 3px solid var(--primary);
+}
+
+.page-banner-content .breadcrumb {
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 6px 18px;
+  margin-bottom: 18px;
+}
+
+.page-banner-content .breadcrumb-item a {
+  color: #fca5a5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-banner-content .breadcrumb-item.active {
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.rate-card-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rate-card-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+.rate-card-item.featured-rate {
+  border: 2px solid var(--primary);
+  box-shadow: 0 10px 30px rgba(235, 22, 22, 0.12);
+  position: relative;
+}
+
+.vehicle-type-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.vehicle-type-tag.best-seller {
+  background: #fee2e2;
+  color: #eb1616;
+}
+
+.rate-card-header h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.rate-price-tag {
+  margin: 12px 0 18px;
+}
+
+.rate-price-tag .currency {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #eb1616;
+  vertical-align: top;
+}
+
+.rate-price-tag .amount {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.rate-price-tag .unit {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.rate-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.rate-features li {
+  font-size: 13.5px;
+  color: #334155;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate-features li .material-symbols-rounded {
+  font-size: 18px;
+  color: #10b981;
+}
+
+.route-list a {
+  text-decoration: none !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: block;
+}
+
+.route-list a:hover {
+  color: #eb1616 !important;
+  transform: translateX(4px);
+}
+
+
+/* SPECIFIC WHATSAPP BUTTONS & ICONS STYLING (NOT CARDS OR GENERIC LINKS) */
+.btn-whatsapp,
+.btn-fleet-whatsapp,
+.btn-rate-book,
+.btn-success:not(.contact-info-card),
+.destination-action[href*="wa.me"],
+.service-action[href*="wa.me"],
+.modern-why-btn-wa {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #ffffff !important;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus,
+.btn-fleet-whatsapp:hover,
+.btn-fleet-whatsapp:focus,
+.btn-rate-book:hover,
+.btn-rate-book:focus,
+.btn-success:not(.contact-info-card):hover,
+.btn-success:not(.contact-info-card):focus,
+.destination-action[href*="wa.me"]:hover,
+.destination-action[href*="wa.me"]:focus,
+.service-action[href*="wa.me"]:hover,
+.service-action[href*="wa.me"]:focus,
+.modern-why-btn-wa:hover,
+.modern-why-btn-wa:focus {
+  background-color: #128C7E !important;
+  border-color: #128C7E !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35) !important;
+}
+
+.rate-card-item .btn-whatsapp,
+.rate-card-item a[href*="wa.me"] {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate-card-item .btn-whatsapp:hover,
+.rate-card-item a[href*="wa.me"]:hover {
+  background-color: #128C7E !important;
+  border-color: #128C7E !important;
+}
+
+.destination-action[href*="wa.me"] svg,
+.service-action[href*="wa.me"] svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+
+/* =========================================================
+   MODERN 'TAXI & CAB SERVICE IN NASHIK' SECTION
+   ========================================================= */
+
+.modern-overview-section {
+  position: relative;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 80px 0 60px;
+  overflow: hidden;
+}
+
+.modern-overview-header {
+  max-width: 960px;
+  margin: 0 auto 50px;
+}
+
+.modern-overview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fee2e2;
+  color: #eb1616;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.modern-overview-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.modern-overview-title span {
+  color: #eb1616;
+}
+
+.modern-overview-lead {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+.modern-overview-sublead {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+/* Trust Stats Bar */
+.modern-stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.modern-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+.modern-stat-item .stat-icon {
+  font-size: 22px;
+  color: #eb1616;
+}
+
+.modern-stat-item strong {
+  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Modern Service Cards Grid */
+.modern-service-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 32px 26px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.modern-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #eb1616, #f97316);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modern-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.09);
+  border-color: #fca5a5;
+}
+
+.modern-service-card:hover::before {
+  opacity: 1;
+}
+
+.modern-card-icon-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.modern-service-card:hover .modern-card-icon-wrap {
+  transform: scale(1.08);
+}
+
+.icon-red {
+  background: #fee2e2;
+  color: #eb1616;
+}
+
+.icon-blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.icon-amber {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.icon-emerald {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.modern-service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.modern-service-card p {
+  color: #64748b;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modern-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.modern-tag-list span {
+  font-size: 11.5px;
+  font-weight: 600;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Why Choose Modern Card Banner */
+.modern-why-banner {
+  margin-top: 45px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 24px;
+  padding: 40px 36px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.15);
+}
+
+.modern-why-banner::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(235, 22, 22, 0.18) 0%, rgba(235, 22, 22, 0) 70%);
+  pointer-events: none;
+}
+
+.modern-why-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modern-why-title span.material-symbols-rounded {
+  color: #eb1616;
+  font-size: 30px;
+}
+
+.modern-why-text {
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  max-width: 860px;
+}
+
+.modern-why-cta-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.modern-why-btn-wa {
+  background: #25D366 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.modern-why-btn-wa:hover {
+  background: #128C7E !important;
+  transform: translateY(-2px);
+}
+
+.modern-why-btn-call {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.modern-why-btn-call:hover {
+  background: #ffffff;
+  color: #0f172a !important;
+}
+
+
+/* =========================================================
+   MODERN MDB INNER PAGES & COMPONENT STYLING
+   ========================================================= */
+
+.page-banner-section {
+  position: relative;
+  background: linear-gradient(135deg, #090e17 0%, #1e293b 60%, #991b1b 100%);
+  padding: 140px 0 70px;
+  color: #ffffff;
+  border-bottom: 4px solid #eb1616;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.page-banner-content .badge-pill-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(235, 22, 22, 0.25);
+  border: 1px solid rgba(235, 22, 22, 0.5);
+  color: #fca5a5;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+
+.page-title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Modern Content Box */
+.content-box {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+}
+
+.section-heading {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.subsection-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Modern MDB Feature & Service Cards */
+.modern-service-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
+  border-color: #fca5a5;
+}
+
+.modern-service-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #eb1616;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modern-service-item:hover::before {
+  opacity: 1;
+}
+
+/* Modern MDB FAQ Accordion */
+.modern-faq-card {
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  margin-bottom: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.modern-faq-card:hover {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.modern-faq-header {
+  background: #f8fafc !important;
+  padding: 16px 20px !important;
+  cursor: pointer;
+}
+
+.modern-faq-header a {
+  color: #0f172a !important;
+  font-weight: 700;
+  font-size: 1.02rem;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modern-faq-body {
+  background: #ffffff;
+  padding: 18px 20px;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Modern Rate Cards */
+.rate-card-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 26px 22px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.rate-card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.rate-card-item.featured-rate {
+  border: 2px solid #eb1616;
+  box-shadow: 0 12px 28px rgba(235, 22, 22, 0.12);
+}
+
+/* Modern Sidebar Card */
+.sidebar-sticky .card {
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.sidebar-sticky .card input.form-control,
+.sidebar-sticky .card select.form-control {
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+}
+
+.sidebar-sticky .card input.form-control:focus,
+.sidebar-sticky .card select.form-control:focus {
+  border-color: #eb1616;
+  box-shadow: 0 0 0 3px rgba(235, 22, 22, 0.15);
+}
+
+/* Contact Info Modern Cards */
+.contact-info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  border-color: #fca5a5;
+}
+
+.contact-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+
+/* RATE CARD WHATSAPP BUTTONS - PERFECT SINGLE-LINE PILL */
+.rate-card-item .btn-whatsapp,
+.rate-card-item a.btn-whatsapp,
+.rate-card-item a[class*="btn-whatsapp"] {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #ffffff !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25) !important;
+  transition: all 0.25s ease !important;
+}
+
+.rate-card-item .btn-whatsapp:hover,
+.rate-card-item a.btn-whatsapp:hover {
+  background-color: #128C7E !important;
+  border-color: #128C7E !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+}
+
+.rate-card-item .btn-whatsapp svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: #ffffff !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+}
+
+/* CONTACT INFO CARDS - GUARANTEE CLEAN WHITE BACKGROUND */
+.contact-info-card,
+a.contact-info-card,
+a.contact-info-card[href*="wa.me"] {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 18px !important;
+  padding: 22px !important;
+  color: #0f172a !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+}
+
+.contact-info-card:hover,
+a.contact-info-card:hover,
+a.contact-info-card[href*="wa.me"]:hover {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08) !important;
+}
+
+.contact-info-card p,
+.contact-info-card h6,
+.contact-info-card small {
+  margin: 0;
+}
+
+.contact-info-card .icon-emerald svg {
+  fill: #059669 !important;
+}
+
+/* CTA PILL BUTTONS (WHATSAPP + CALL) - BEAUTIFULLY BALANCED */
+.btn-cta-whatsapp {
+  background-color: #25D366 !important;
+  border: 2px solid #25D366 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  padding: 10px 24px !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-cta-whatsapp:hover {
+  background-color: #128C7E !important;
+  border-color: #128C7E !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+}
+
+.btn-cta-call {
+  background-color: #ffffff !important;
+  border: 2px solid #eb1616 !important;
+  color: #eb1616 !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  padding: 10px 24px !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-cta-call:hover {
+  background-color: #eb1616 !important;
+  border-color: #eb1616 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(235, 22, 22, 0.25) !important;
 }
