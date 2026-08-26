@@ -100,7 +100,7 @@ if (rideForm) {
     event.preventDefault();
     if (!validateForm()) return;
     const message = `Hello, I would like to book a ride.%0A%0APick up: ${encodeURIComponent(fields.pickup.value)}%0ADrop off: ${encodeURIComponent(fields.dropoff.value)}%0ADate: ${encodeURIComponent(fields.date.value)}%0ATime: ${encodeURIComponent(fields.time.value)}%0APassengers: ${encodeURIComponent(fields.passengers.value)}%0AMobile: ${encodeURIComponent(fields.mobile.value)}`;
-    window.open(`https://wa.me/917588483221?text=${message}`, '_blank', 'noopener');
+    window.open(`https://wa.me/918530027827?text=${message}`, '_blank', 'noopener');
   });
   validateForm();
 }
@@ -122,7 +122,7 @@ if (contactForm) {
       return;
     }
 
-    const payload = `Hello Premium Taxi,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
-    window.open(`https://wa.me/917588483221?text=${payload}`, '_blank', 'noopener');
+    const payload = `Hello Goa Cab Express,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/918530027827?text=${payload}`, '_blank', 'noopener');
   });
 }
