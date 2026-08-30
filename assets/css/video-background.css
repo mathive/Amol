@@ -4,10 +4,10 @@
 .service-hero {
   position: relative;
   isolation: isolate;
-  min-height: 520px;
+  min-height: 420px;
   overflow: hidden;
   color: #fff;
-  padding: 150px clamp(20px, 7vw, 110px) 52px;
+  padding: 135px clamp(20px, 7vw, 110px) 45px;
   display: flex;
   align-items: center;
 }
@@ -22,11 +22,13 @@
 .service-hero .hero-content {
   max-width: 760px;
 }
-.service-hero h1 {
-  margin: 16px 0 14px;
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
-  line-height: 1.02;
-  letter-spacing: -0.07em;
+.service-hero h1,
+.service-hero h2 {
+  margin: 16px 0 16px;
+  font-size: 25px !important;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 .service-hero .status-chip {
   margin-bottom: 0;
@@ -34,20 +36,52 @@
 .service-hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, .74), rgba(0, 0, 0, .52) 48%, rgba(0, 0, 0, .16));
+  background: linear-gradient(90deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .3) 48%, rgba(0, 0, 0, 0.2));
 }
-.service-hero .hero-content p {
-  max-width: 620px;
-  font-size: 1.02rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+.service-hero .cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.service-hero .cta-row .btn {
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  border-radius: 50px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+  margin: 0 !important;
+  text-transform: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.service-hero .cta-row .btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+.service-hero .cta-row .btn .material-symbols-rounded {
+  font-size: 17px !important;
 }
 @media (max-width: 767px) {
   .service-hero {
-    min-height: 420px;
-    padding-top: 120px;
+    min-height: 340px;
+    padding-top: 110px;
+    padding-bottom: 35px;
   }
-  .service-hero h1 {
-    font-size: clamp(2.2rem, 10vw, 3.2rem);
+  .service-hero h1,
+  .service-hero h2 {
+    font-size: 25px !important;
+  }
+  .service-hero .cta-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .service-hero .cta-row .btn {
+    padding: 7px 15px !important;
+    font-size: 12.5px !important;
   }
 }

@@ -16,6 +16,41 @@ function setActiveNavItem(targetHash) {
   }
 }
 
+// Auto-close responsive navbar collapse on link click and outside click in mobile view
+const navbarCollapses = Array.from(document.querySelectorAll('.navbar-collapse'));
+
+function closeMobileNavbars() {
+  navbarCollapses.forEach((navbarCollapse) => {
+    if (navbarCollapse.classList.contains('show')) {
+      if (window.jQuery && typeof window.jQuery(navbarCollapse).collapse === 'function') {
+        window.jQuery(navbarCollapse).collapse('hide');
+      } else {
+        navbarCollapse.classList.remove('show');
+      }
+      const toggler = document.querySelector(`[data-target="#${navbarCollapse.id}"], [href="#${navbarCollapse.id}"]`);
+      if (toggler) {
+        toggler.classList.add('collapsed');
+        toggler.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+}
+
+// Close mobile navbar when clicking any link inside the collapse
+document.querySelectorAll('.navbar-collapse a').forEach((link) => {
+  link.addEventListener('click', () => {
+    closeMobileNavbars();
+  });
+});
+
+// Close mobile navbar when clicking outside the top-app-bar
+document.addEventListener('click', (event) => {
+  const topAppBar = document.querySelector('.top-app-bar');
+  if (topAppBar && !topAppBar.contains(event.target)) {
+    closeMobileNavbars();
+  }
+});
+
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     const targetHash = link.getAttribute('href') || '#top';
