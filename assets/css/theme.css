@@ -715,7 +715,7 @@ footer .brand b {
 
 @media (max-width: 900px) {
   .hero {
-    min-height: auto;
+    /* min-height: auto; */
     padding: 130px 25px 56px;
   }
 

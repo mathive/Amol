@@ -3113,8 +3113,8 @@ footer {
   }
 
   .hero {
-    min-height: 700px;
-    padding: 115px 25px 190px;
+    /* min-height: auto; */
+    padding: 130px 25px 56px;
   }
 
   .hero h1 {
