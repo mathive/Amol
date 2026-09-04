@@ -91,6 +91,7 @@ if (window.jQuery) {
   // Initialize Carousel
   if (typeof $.fn.carousel === 'function') {
     $('#vehicleRatesCarousel').carousel({ interval: 6000, pause: 'hover' });
+    $('#vehicleRatesCarouselMobile').carousel({ interval: 5000, pause: 'hover' });
     $('#testimonialCarousel').carousel({ interval: 5000, pause: 'hover' });
     $('#momentsGallery').carousel({ interval: 4000, pause: 'hover' });
   }

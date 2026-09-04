@@ -4975,3 +4975,17 @@ a.contact-info-card[href*="wa.me"]:hover {
   }
 }
 
+
+
+.rates-mobile-carousel-wrap {
+  padding: 0 10px;
+}
+
+.rates-mobile-carousel-wrap .carousel-item {
+  padding: 8px 4px 16px;
+}
+
+.rates-mobile-carousel-wrap .vehicle-rate-card {
+  max-width: 360px;
+  margin: 0 auto;
+}
