@@ -4670,3 +4670,38 @@ a.contact-info-card[href*="wa.me"]:hover {
     display: none;
   }
 }
+
+
+.travel-booking-form .mdb-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.travel-booking-form .mdb-field .field-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #eb1616;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.travel-booking-form .mdb-field .form-control {
+  height: 50px;
+  padding-left: 44px;
+  padding-right: 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 14.5px;
+  color: #1e293b;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.travel-booking-form .mdb-field .form-control:focus {
+  border-color: #eb1616;
+  box-shadow: 0 0 0 3px rgba(235, 22, 22, 0.12);
+  outline: none;
+}
