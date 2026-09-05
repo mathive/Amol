@@ -2900,22 +2900,65 @@ footer {
 
 .footer-contact-list {
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .footer-contact-list a,
 .footer-contact-list span {
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.82);
+  align-items: flex-start;
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-size: 14px;
+  line-height: 1.55;
 }
 
 .footer-contact-list .material-symbols-rounded {
   color: var(--primary-light);
-  font-size: 18px;
+  font-size: 19px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Elegant Glowing Phone Number in Footer */
+.footer-contact-list a.footer-phone-glow {
+  font-weight: 700;
+  color: #ffdd59;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 10px rgba(255, 221, 89, 0.55), 0 0 20px rgba(255, 170, 0, 0.35);
+  animation: phoneGlowPulse 2.8s ease-in-out infinite alternate;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: fit-content;
+}
+
+.footer-contact-list a.footer-phone-glow .material-symbols-rounded {
+  color: #ffdd59;
+  filter: drop-shadow(0 0 6px rgba(255, 221, 89, 0.65));
+  margin-top: 0;
+}
+
+.footer-contact-list a.footer-phone-glow:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 24px rgba(255, 221, 89, 0.85), 0 0 35px rgba(255, 107, 107, 0.6);
+  transform: translateX(3px);
+}
+
+@keyframes phoneGlowPulse {
+  0% {
+    text-shadow: 0 0 6px rgba(255, 221, 89, 0.45), 0 0 12px rgba(255, 170, 0, 0.25);
+    color: #ffd24d;
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 221, 89, 0.85), 0 0 22px rgba(255, 180, 0, 0.55), 0 0 32px rgba(230, 57, 70, 0.4);
+    color: #fff48f;
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(255, 221, 89, 0.45), 0 0 12px rgba(255, 170, 0, 0.25);
+    color: #ffd24d;
+  }
 }
 
 .footer-socials {
